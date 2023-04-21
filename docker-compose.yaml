@@ -1,0 +1,11 @@
+version: "3.8"
+services:
+  generator:
+    build: ./
+    container_name: generator_c
+    ports:
+      - '3000:3000'
+    stdin_open: true
+    tty: true 
+    volumes:
+      - .:/app
